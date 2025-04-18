@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Scan from './components/Scan';
+import Landing from './pages/Landing'
+import UserDetailsForm from './components/UserDetailsForm';
+import MobileNumber from './components/MobileNumber';
+import Otp from './components/Otp';
+import PaymentSuccess from './components/PaymentSuccess';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Scan/>
+      {/* <UserDetailsForm/> */}
+      {/* <MobileNumber/> */}
+      {/* <Otp/> */}
+      {/* <PaymentSuccess/> */}
     </div>
   );
 }
